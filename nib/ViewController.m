@@ -24,9 +24,9 @@
 
 - (void)viewDidLayoutSubviews
 {
-    [self addPhotoWithLabelsToView:self.redView];
-    [self addPhotoWithLabelsToView:self.greenView];
-    [self addPhotoWithLabelsToView:self.yellowView];
+//    [self addPhotoWithLabelsToView:self.redView];
+//    [self addPhotoWithLabelsToView:self.greenView];
+//    [self addPhotoWithLabelsToView:self.yellowView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,13 +34,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)addPhotoWithLabelsToView:(UIView *)view
-{
-    CustomView *customView = [[CustomView alloc] initWithFrame:view.bounds];
-    UINib *nib = [UINib nibWithNibName:@"CustomView" bundle:nil];
-    [nib instantiateWithOwner:customView options:nil];
-    [customView setup];
-    [view addSubview:customView];
-}
+//- (void)addPhotoWithLabelsToView:(UIView *)view
+//{
+//    CustomView *customView = [[CustomView alloc] initWithFrame:view.bounds];
+//    UINib *nib = [UINib nibWithNibName:@"CustomView" bundle:nil];
+//    [nib instantiateWithOwner:customView options:nil];
+//    [customView setup];
+//    [view addSubview:customView];
+//}
 
 @end
