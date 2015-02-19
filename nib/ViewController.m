@@ -18,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self addPhotoWithLabels];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,7 +27,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonPress:(id)sender
+- (void)addPhotoWithLabels
 {
     CustomView *customView = [[CustomView alloc] initWithFrame:self.smallView.bounds];
     UINib *nib = [UINib nibWithNibName:@"CustomView" bundle:nil];
